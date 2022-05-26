@@ -1,0 +1,22 @@
+seed: [11, 22, 33, 44, 55]
+run_name: "dropout_all_layers_autolr"
+dataset: "TissueMNIST"
+model_name: "resnet18"
+n_classes: 8
+training:
+  p_dropout: 0.1
+  num_epochs: 100
+  batch_size: 128
+  lr: 1e-3
+  swag:
+    swa_start: 5
+    swa_lr: 0.05
+    lr_init: 0.1
+    num_epochs: 25
+  duq:
+    lr: 0.01
+    l_gradient_penalty: 0.5
+    milestones: [50, 75]
+augmentations:
+  expand_channels: True
+

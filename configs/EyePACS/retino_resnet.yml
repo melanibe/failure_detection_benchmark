@@ -1,0 +1,21 @@
+seed: [11, 22, 33, 44, 55]
+run_name: final
+dataset: "DiabeticRetino"
+model_name: "resnet50"
+n_classes: 2
+training:
+  p_dropout: 0.1
+  num_epochs: 50
+  batch_size: 16 # needs to be 8 for DUQ for OOM reasons
+  lr: 1e-3
+  swag:
+    swa_start: 10
+    swa_lr: 5e-3
+    lr_init: 1e-2
+    num_epochs: 50
+  duq:
+    lr: 1e-3
+    l_gradient_penalty: 0.1
+    milestones: [10]
+augmentations:
+  resize: (512, 512)

@@ -1,0 +1,12 @@
+seed: [11, 22, 33, 44, 55]
+run_name: baseline
+dataset: "DiabeticRetino"
+model_name: "wideresnet50"
+n_classes: 2
+training:
+  p_dropout: 0.1
+  num_epochs: 100
+  batch_size: 12
+  lr: 1e-3
+augmentations:
+  resize: (512, 512)

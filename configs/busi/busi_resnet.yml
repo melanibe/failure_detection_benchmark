@@ -1,0 +1,27 @@
+seed: [11, 22, 33, 44, 55]
+run_name: "dropout_all_layers_autolr_longer"
+dataset: "BUSI"
+model_name: "resnet18"
+n_classes: 3
+training:
+  p_dropout: 0.1
+  num_epochs: 100
+  batch_size: 32
+  lr: 1e-3
+  swag:
+      swa_start: 75
+      swa_lr: 0.005
+      lr_init: 0.01
+      num_epochs: 120
+  duq:
+    lr: 1e-3
+    milestones: [10, 50]
+augmentations:
+  expand_channels: True
+  random_rotation: 10
+  horizontal_flip: True
+  resize: 224
+  center_crop: 224
+  random_crop: (0.9, 1)
+  random_color_jitter: 0.5
+

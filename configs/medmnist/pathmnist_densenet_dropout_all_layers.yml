@@ -1,0 +1,15 @@
+seed: [11, 22, 33, 44, 55] 
+run_name: "dropout_all_layers_autolr"
+dataset: "PathMNIST"
+model_name: "densenet"
+n_classes: 9
+training:
+  p_dropout: 0.1
+  num_epochs: 100
+  batch_size: 128
+  lr: 1e-3
+augmentations:
+  resize: 30
+
+
+

@@ -1,0 +1,17 @@
+seed: [11, 22, 33, 44, 55]
+run_name: final
+dataset: "RSNAPneumonia"
+model_name: "densenet"
+n_classes: 2
+training:
+  p_dropout: 0.1
+  num_epochs: 50
+  batch_size: 32
+  lr: 1e-4
+augmentations:
+  random_rotation: 30
+  horizontal_flip: True
+  expand_channels: True
+  resize: 256
+  random_crop: (0.8, 1)
+  center_crop: 224
