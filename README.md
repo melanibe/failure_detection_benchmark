@@ -1,4 +1,5 @@
 # Failure Detection in Medical Image Classification: A Reality Check and Benchmarking Testbed
+![Failure Detection Framework](paper_plotting_notebooks/figure1.png)
 
 This repository contains the code to reproduce all the experiments in the "Failure Detection in Medical Image Classification: A Reality Check and Benchmarking Testbed" paper. 
 In particular it allows benchmarking of 9 different confidence scoring methods, for 6 different medical imaging datasets. We provide all the necessary training, evaluation and plotting code to reproduce all the experiments in the paper. 
