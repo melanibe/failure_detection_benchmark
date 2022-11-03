@@ -4,6 +4,17 @@
 This repository contains the code to reproduce all the experiments in the ["Failure Detection in Medical Image Classification: A Reality Check and Benchmarking Testbed"](https://openreview.net/pdf?id=VBHuLfnOMf) paper. 
 In particular it allows benchmarking of 9 different confidence scoring methods, for 6 different medical imaging datasets. We provide all the necessary training, evaluation and plotting code to reproduce all the experiments in the paper. 
 
+If you like this repository, please consider citing the associated paper
+```
+@article{
+bernhardt2022failure,
+title={Failure Detection in Medical Image Classification: A Reality Check and Benchmarking Testbed},
+author={M{\'e}lanie Bernhardt and Fabio De Sousa Ribeiro and Ben Glocker},
+journal={Transactions on Machine Learning Research},
+year={2022},
+url={https://openreview.net/forum?id=VBHuLfnOMf}
+}
+```
 ## Overview
 The repository is divided into 5 main folders:
 * `data_handling` contains all the code related to data loading and augmentations.
